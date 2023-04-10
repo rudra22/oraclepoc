@@ -1,0 +1,10 @@
+connection:
+  db:
+    name:
+      dev:
+        user_name: 'rghosh'
+        password: 'rghosh'
+        connect_string: '1521@xepdb1'
+      stage:
+        user_name: ''
+        password: ''
