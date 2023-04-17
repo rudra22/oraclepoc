@@ -1,8 +1,5 @@
-# This is a sample Python script.
+from oracle_operator import OracleOperator
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from OracleOperator import OracleOperator
 
 db_operator = OracleOperator("config.yaml")
 
