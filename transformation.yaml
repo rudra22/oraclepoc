@@ -1,0 +1,18 @@
+transformation:
+  task1:
+    task_type: "data_pull"
+    sql: "select * from persons"
+  task2:
+    task_type: "data_pull"
+    table_name: "select * from persons_copy"
+  task3:
+    task_type: "joiner"
+    left: "task1"
+    right: "task2"
+    join_type: "inner"
+    left_key_cols: ""
+    right_key_cols: ""
+  task4:
+    task_type: "data_push"
+    df: 'task3'
+    table_name: "persons_op"
